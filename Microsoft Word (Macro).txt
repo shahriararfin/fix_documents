@@ -1,0 +1,420 @@
+Sub Fix_Document()
+
+    Selection.ParagraphFormat.Alignment = wdAlignParagraphJustify
+    With ActiveDocument.Styles(wdStyleNormal).Font
+        .Name = Proxima Nova
+        .Size = 12
+        .Color = wdColorAutomatic
+        .SizeBi = 12
+        .NameBi = Bangla
+    End With
+
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+
+    ' Fix ড়__ড়া__ড়ি__ড়ী__ড়ু__ড়ূ__ড়ৃ__ড়ে__ড়ৈ__ড়ো__ড়ৌ
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492)
+    .Replacement.Text = ChrW(2524)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2494)
+    .Replacement.Text = ChrW(2524) & ChrW(2494)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2495)
+    .Replacement.Text = ChrW(2524) & ChrW(2495)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2496)
+    .Replacement.Text = ChrW(2524) & ChrW(2496)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2497)
+    .Replacement.Text = ChrW(2524) & ChrW(2497)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2498)
+    .Replacement.Text = ChrW(2524) & ChrW(2498)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2499)
+    .Replacement.Text = ChrW(2524) & ChrW(2499)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2503)
+    .Replacement.Text = ChrW(2524) & ChrW(2503)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2492) & ChrW(2504)
+    .Replacement.Text = ChrW(2524) & ChrW(2504)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+
+
+
+
+    ' Fix ঢ়__ঢ়া__ঢ়ি__ঢ়ী__ঢ়ু__ঢ়ূ__ঢ়ৃ__ঢ়ে__ঢ়ৈ__ঢ়ো__ঢ়ৌ
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492)
+    .Replacement.Text = ChrW(2525)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492)
+    .Replacement.Text = ChrW(2525)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2494)
+    .Replacement.Text = ChrW(2525) & ChrW(2494)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2495)
+    .Replacement.Text = ChrW(2525) & ChrW(2495)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2496)
+    .Replacement.Text = ChrW(2525) & ChrW(2496)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2497)
+    .Replacement.Text = ChrW(2525) & ChrW(2497)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2498)
+    .Replacement.Text = ChrW(2525) & ChrW(2498)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2499)
+    .Replacement.Text = ChrW(2525) & ChrW(2499)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2503)
+    .Replacement.Text = ChrW(2525) & ChrW(2503)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2492) & ChrW(2504)
+    .Replacement.Text = ChrW(2525) & ChrW(2504)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+
+
+
+
+    ' Fix য়__য়া__য়ি__য়ী__য়ু__য়ূ__য়ৃ__য়ে__য়ৈ__য়ো__য়ৌ
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492)
+    .Replacement.Text = ChrW(2527)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492)
+    .Replacement.Text = ChrW(2527)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2494)
+    .Replacement.Text = ChrW(2527) & ChrW(2494)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2495)
+    .Replacement.Text = ChrW(2527) & ChrW(2495)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2496)
+    .Replacement.Text = ChrW(2527) & ChrW(2496)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2497)
+    .Replacement.Text = ChrW(2527) & ChrW(2497)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2498)
+    .Replacement.Text = ChrW(2527) & ChrW(2498)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2499)
+    .Replacement.Text = ChrW(2527) & ChrW(2499)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2503)
+    .Replacement.Text = ChrW(2527) & ChrW(2503)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2492) & ChrW(2504)
+    .Replacement.Text = ChrW(2527) & ChrW(2504)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+
+
+
+
+    ' Fix  ো of (ক - য়) --------------------------------------------
+
+
+    With Selection.Find
+    .Text = ChrW(2453) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2453) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2454) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2454) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2455) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2455) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2456) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2456) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2457) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2457) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2458) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2458) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2459) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2459) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2460) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2460) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2461) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2461) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2462) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2462) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2463) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2463) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2464) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2464) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2465) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2465) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2466) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2466) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2467) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2467) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2468) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2468) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2469) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2469) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2470) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2470) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2471) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2471) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2472) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2472) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2474) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2474) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2475) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2475) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2476) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2476) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2477) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2477) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2478) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2478) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2479) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2479) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2480) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2480) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2482) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2482) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2486) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2486) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2487) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2487) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2488) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2488) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2489) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2489) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2524) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2524) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2525) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2525) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+    With Selection.Find
+    .Text = ChrW(2527) & ChrW(2494) & ChrW(2503)
+    .Replacement.Text = ChrW(2527) & ChrW(2507)
+    End With
+    Selection.Find.Execute Replace=wdReplaceAll
+
+End Sub
