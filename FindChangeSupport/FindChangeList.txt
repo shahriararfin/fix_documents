@@ -1,0 +1,10 @@
+grep	{findWhat:"[|]+"}	{changeTo:""}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"[\u0964]+"}	{changeTo:"\u0964"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"\s \u0983"}	{changeTo:"\u0983"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:") \u0983"}	{changeTo:"):"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"\u201c\u201d"}	{changeTo:""}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"\u09be\u09c7"}	{changeTo:"\u09cb"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"\u09d7\u09c7"}	{changeTo:"\u09cc"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"\u09a1\u09bc"}	{changeTo:"\u09dc"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"\u09a2\u09bc"}	{changeTo:"\u09dd"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
+grep	{findWhat:"\u09af\u09bc"}	{changeTo:"\u09df"}	{includeFootnotes:true, includeMasterPages:true, includeHiddenLayers:true, wholeWord:false}
