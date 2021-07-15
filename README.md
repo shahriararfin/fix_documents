@@ -2,4 +2,4 @@
 
 ### Getting started
 
-From the branch dropdown choose `Microsoft Word` or `InDesign`, on which one you are working now and Collect your files.
+From the branch dropdown, choose Microsoft Word or InDesign, on which one you are working now. And collect your files.
